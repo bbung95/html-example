@@ -1,0 +1,53 @@
+.container{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    font-size: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* flex
+
+- 부모 요소에 display: flex을 넣어줍니다
+- flex는 width가 부모의 width를 넘기더라도 최대한 px를 지키면서
+  flexBox 안을 벗어나지 않도록 합니다
+
+*/
+
+.top{
+    background-color: red;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}
+
+p{
+    margin: 0px;
+}
+
+.left{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.right{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    font-size: 16px;
+}
+
+.bottom{
+    background-color: purple;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}
+
+.flexBox{
+    display: flex;
+}

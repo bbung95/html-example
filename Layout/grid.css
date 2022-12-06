@@ -1,0 +1,64 @@
+.container{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    font-size: 0px;
+    color: white;
+    font-weight: bold;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "top top"
+    "left right"
+    "bottom bottom";
+}
+
+
+/* grid
+
+- display : grid
+- grid-template-columns: 1fr 1fr
+  가로 2칸
+- grid-template-rows: 1fr 1fr 1fr
+  세로 3줄
+- 부모의 요소를 균등하게 분배를 한다
+
+- grid-template-areas: 
+    "top top"
+    "left right"
+    "bottom bottom";
+각각 분배된 요소의 이름을 지정한다.
+
+- 자식 요소의 grid-area: top를 넣는다
+- 자식 요소에는 크기를 지정하기보다는 auto를 사용하는게 좋다
+*/
+
+.top{
+    background-color: red;
+    font-size: 16px;
+    grid-area: top;
+}
+
+p{
+    margin: 0px;
+}
+
+.left{
+    background-color: blue;
+    font-size: 16px;
+    grid-area: left;
+}
+
+.right{
+    background-color: green;
+    font-size: 16px;
+    grid-area: right;
+}
+
+.bottom{
+    background-color: purple;
+    font-size: 16px;
+    grid-area: bottom;
+}

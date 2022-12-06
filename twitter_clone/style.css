@@ -1,0 +1,45 @@
+html, body{
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+main{
+    display: grid;
+    place-content : center;
+}
+
+.container{
+    height: 2000px;
+    width: 1120px;
+    display: grid;
+    grid-template-columns: 251px 566px 350px ;
+    grid-template-rows: 53px 1fr;
+    grid-template-areas: 
+    "header header header"
+    "nav_left contents nav_right";
+}
+
+.header{
+    background-color: blue;
+    grid-area: header;
+    border: 1px solid black;
+}
+
+.nav_left{
+    background-color: beige;
+    grid-area: nav_left;
+    border: 1px solid black;
+}
+
+.nav_right{
+    background-color: azure;
+    grid-area: nav_right;
+    border: 1px solid black;
+}
+
+.contents{
+    background-color: aqua;
+    grid-area: contents;
+    border: 1px solid black;
+}

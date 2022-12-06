@@ -1,0 +1,58 @@
+.container{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    font-size: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* float 
+
+- 레이아웃을 위한 CSS
+- default float : none
+- float: left, float: right 로 쉽게 표현 가능
+*/
+
+/*
+모든 요소는 1층에 머물도록 되어있습니다.
+float를 사용하게 되면 해당 block이 2층으로 옴겨지게됩니다.
+
+- clear: both; 를 통해 float를 끝마치겠다를 선언할 수 있다
+*/
+
+.top{
+    background-color: red;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}
+
+p{
+    margin: 0px;
+}
+
+.left{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    font-size: 16px;
+    float: left;
+}
+
+.right{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    font-size: 16px;
+    float: right;
+}
+
+.bottom{
+    clear: both;
+    background-color: purple;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}

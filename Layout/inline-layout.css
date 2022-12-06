@@ -1,0 +1,53 @@
+.container{
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    font-size: 0px;
+    color: white;
+    font-weight: bold;
+}
+
+
+/* inline Layout 
+
+- display: inline-block 를 배치하여 가로정렬
+- 하지만 inline-block으로 설정된 블록안에 컨텐츠가 생겼을 경우
+  Layout이 망가지게된다
+  안에 있는 컨텐츠로 부터 블록의 사이즈가 정해지기 때문이다.
+- vertical-align: top 을 사용하여 해결가능
+*/
+
+.top{
+    background-color: red;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}
+
+p{
+    margin: 0px;
+}
+
+.left{
+    background-color: blue;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    font-size: 16px;
+    vertical-align: top;
+}
+
+.right{
+    background-color: green;
+    height: 200px;
+    width: 200px;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.bottom{
+    background-color: purple;
+    width: 400px;
+    height: 200px;
+    font-size: 16px;
+}
