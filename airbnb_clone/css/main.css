@@ -1,186 +1,232 @@
 .wrap {
-  background-color: white;
-  width: 80%;
-  max-width: 1920px;
-  margin: 0 auto;
-  border: 1px solid black;
+    background-color: white;
+    width: 80%;
+    max-width: 1920px;
+    margin: 0 auto;
 }
 
 /* header */
 header {
-  background-color: black;
-  text-align: center;
-  padding-top: 20px;
+    background-color: black;
+    text-align: center;
+    padding-top: 20px;
 
-  position: relative;
+    position: relative;
 }
 
 header .gnb {
-  display: grid;
-  grid-template-columns: 300px 1fr 300px;
-  grid-template-rows: 1fr 1fr;
-  grid-template-areas:
-    "logo gnb-menu gnb-profile"
-    "search search search";
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "logo gnb-menu gnb-profile"
+        "search search search";
 
-  color: white;
+    color: white;
 }
 
 header .gnb .logo {
-  grid-area: logo;
-  display: flex;
-  align-items: center;
+    grid-area: logo;
+    display: flex;
+    align-items: center;
 }
 
 header .gnb .gnb-menu {
-  grid-area: gnb-menu;
-  display: flex;
-  justify-content: center;
+    grid-area: gnb-menu;
+    display: flex;
+    justify-content: center;
 }
 
 header .gnb .gnb-menu ul {
-  width: 60%;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 0 auto;
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0 auto;
 }
 
 header .gnb .gnb-menu ul li {
-  font-weight: bold;
-  cursor: pointer;
-  position: relative;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
 }
 
 header .gnb .gnb-menu ul .active::before {
-  content: "";
-  height: 2px;
-  width: 15px;
-  background-color: white;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translate(-50%, 0);
+    content: "";
+    height: 2px;
+    width: 15px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 header .gnb .gnb-menu ul li:not(.active):hover {
-  color: lightgray;
+    color: lightgray;
 }
 
 header .gnb .gnb-menu ul li:not(.active):hover::before {
-  content: "";
-  height: 2px;
-  width: 4px;
-  background-color: white;
-  position: absolute;
-  bottom: -10px;
-  left: 50%;
-  transform: translate(-50%, 0);
+    content: "";
+    height: 2px;
+    width: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 
 header .gnb .gnb-profile {
-  grid-area: gnb-profile;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-weight: bold;
-  width: 80%;
-  margin-left: 20%;
+    grid-area: gnb-profile;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+    width: 80%;
+    margin-left: 20%;
 }
 
 header .gnb .gnb-profile .menu-hover {
-  padding: 10px 20px;
+    padding: 10px 20px;
 }
 
 header .gnb .gnb-profile .menu-hover:hover {
-  background-color: rgba(172, 172, 172, 0.3);
-  border-radius: 30px;
+    background-color: rgba(172, 172, 172, 0.3);
+    border-radius: 30px;
 }
 
 header .gnb .gnb-profile .profile {
-  background-color: white;
-  color: gray;
-  padding: 10px 10px;
-  border-radius: 30px;
+    background-color: white;
+    color: gray;
+    padding: 10px 10px;
+    border-radius: 30px;
 }
 
 header .gnb .search {
-  grid-area: search;
+    grid-area: search;
 }
 
 header .gnb .search .search-bar {
-  background-color: white;
-  color: black;
-  width: 70%;
-  display: flex;
-  margin: 0 auto;
+    background-color: white;
+    color: black;
+    width: 70%;
+    display: flex;
+    margin: 0 auto;
 
-  border-radius: 50px;
+    border-radius: 50px;
 }
 
 header .gnb .search .search-bar li {
-  width: 25%;
-  text-align: left;
-  padding: 20px 50px 20px 20px;
-  font-weight: blod;
-  font-size: 15px;
-  position: relative;
+    width: 25%;
+    text-align: left;
+    padding: 20px 50px 20px 20px;
+    font-weight: blod;
+    font-size: 15px;
+    position: relative;
 }
 
 header .gnb .search .search-bar li::after {
-  position: absolute;
-  content: "";
-  width: 1px;
-  height: calc(100% - 40px);
-  top: 50%;
-  right: 0;
-  background-color: lightgray;
-  transform: translate(0, -50%);
+    position: absolute;
+    content: "";
+    width: 1px;
+    height: calc(100% - 40px);
+    top: 50%;
+    right: 0;
+    background-color: lightgray;
+    transform: translate(0, -50%);
 }
 
 header .gnb .search .search-bar li:last-child::after {
-  display: none;
+    display: none;
 }
 
 header .gnb .search .search-bar li span {
-  color: gray;
+    color: gray;
 }
 
 header .gnb .search .search-bar li:hover {
-  background-color: lightgray;
-  border-radius: 50px;
+    background-color: lightgray;
+    border-radius: 50px;
 }
 
 /* notice */
 
 .notice {
-  background-color: #ff385c;
-  border-radius: 14px;
-  text-align: center;
-  height: 320px;
+    background-color: #ff385c;
+    border-radius: 14px;
+    text-align: center;
+    height: 320px;
 
-  position: relative;
+    position: relative;
 
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .notice p {
-  font-size: 1.5rem;
-  color: white;
-  font-weight: bold;
-  line-height: 1.8rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    line-height: 1.8rem;
 
-  margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 .notice button {
-  border: 1px solid white;
-  padding: 5px 15px;
-  color: white;
-  background-color: inherit;
-  font-weight: bold;
-  border-radius: 8px;
+    border: 1px solid white;
+    padding: 5px 15px;
+    color: white;
+    background-color: inherit;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* main-banner */
+
+.main-banner {
+    height: 600px;
+    border-radius: 14px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 50px;
+
+    background-image: url(../img/banner-img.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    opacity: 0.9;
+}
+
+.main-banner .content {
+    color: white;
+    text-align: center;
+}
+
+.main-banner .content p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+.main-banner .content button {
+    border: 1px solid white;
+    background-color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 30px;
+}
+
+.main-banner .content button span {
+    background: linear-gradient(90deg, #6f019c 0, #c6017e 135.12%);
+    -webkit-background-clip: -webkit-text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
