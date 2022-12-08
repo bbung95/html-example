@@ -3,6 +3,7 @@
     width: 80%;
     max-width: 1920px;
     margin: 0 auto;
+    overflow: hidden;
 }
 
 .black-bg {
@@ -246,13 +247,6 @@ header .gnb .search .search-bar li:hover {
 
 /* idea */
 
-.idea .heading {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    color: black;
-    font-weight: bold;
-}
-
 .idea .city {
     display: flex;
     width: 100%;
@@ -297,4 +291,56 @@ header .gnb .search .search-bar li:hover {
 
 .idea .city .card figcaption p span {
     font-size: 0.9rem;
+}
+
+/* expression */
+
+.expression {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 25px;
+    grid-template-areas:
+        "heading heading"
+        "div1 div2";
+}
+
+.expression .photo-div {
+    height: calc(700px - calc(60px * 2));
+    padding: 60px;
+    border-radius: 15px;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.expression .photo-div:first-of-type {
+    background-image: url(../img/traveler.jpg);
+}
+
+.expression .photo-div:last-of-type {
+    background-image: url(../img/family_home.jpg);
+}
+
+.expression .photo-div p {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.expression .photo-div button {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: bold;
+    border: none;
+    background-color: white;
+    padding: 13px 22px;
+    border-radius: 15px;
+    margin-top: 16px;
+}
+
+.expression .photo-div button:hover {
+    background-color: lightgrey;
 }

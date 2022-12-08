@@ -17,3 +17,10 @@ html {
 button {
     cursor: pointer;
 }
+
+.heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
