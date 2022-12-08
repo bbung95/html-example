@@ -5,13 +5,23 @@
     margin: 0 auto;
 }
 
+.black-bg {
+    background-color: black;
+    width: 100%;
+    height: 1000px;
+    left: 0;
+
+    position: absolute;
+    z-index: 1;
+}
+
 /* header */
 header {
-    background-color: black;
     text-align: center;
     padding-top: 20px;
 
     position: relative;
+    z-index: 10;
 }
 
 header .gnb {
@@ -164,6 +174,8 @@ header .gnb .search .search-bar li:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    z-index: 10;
 }
 
 .notice p {
@@ -201,7 +213,8 @@ header .gnb .search .search-bar li:hover {
     background-repeat: no-repeat;
     background-position: center;
 
-    opacity: 0.9;
+    position: relative;
+    z-index: 10;
 }
 
 .main-banner .content {
@@ -229,4 +242,59 @@ header .gnb .search .search-bar li:hover {
     -webkit-background-clip: -webkit-text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+/* idea */
+
+.idea .heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: black;
+    font-weight: bold;
+}
+
+.idea .city {
+    display: flex;
+    width: 100%;
+}
+
+.idea .city .card {
+    width: 25%;
+    margin-right: 30px;
+
+    cursor: pointer;
+}
+
+.idea .city .card:last-of-type {
+    margin-right: 0px;
+}
+
+.idea .city .card img {
+    width: 100%;
+    height: 180px;
+    display: block;
+
+    border-radius: 15px 15px 0px 0px;
+}
+
+.idea .city .card figcaption {
+    padding: 20px 0px 140px 15px;
+    border-radius: 0px 0px 15px 15px;
+    color: white;
+}
+
+.idea .city .card figcaption {
+    height: calc(180px - calc(24px * 2));
+    padding: 24px 16px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.idea .city .card figcaption p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.idea .city .card figcaption p span {
+    font-size: 0.9rem;
 }
