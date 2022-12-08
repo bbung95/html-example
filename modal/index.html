@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>modal</title>
+
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h1>제목입니다</h1>
+        <p>내용입니다</p>
+        <button>수정하기</button>
+        <button onclick="onClickDeleteModal()">삭제하기</button>
+
+        <div class="modal-div">
+            <div class="bg"></div>
+            <div class="modal">
+                <p>정말 삭제하시겠습니까?</p>
+                <button>삭제</button>
+                <button>취소</button>
+            </div>
+        </div>
+
+        <script>
+            let delete_modal = document.querySelector(".modal-div");
+
+            const onClickDeleteModal = () => {
+                console.log(123);
+                delete_modal.style.display = "block";
+            };
+
+            document.querySelector(".bg").addEventListener("click", () => {
+                delete_modal.style.display = "none";
+            });
+        </script>
+    </body>
+</html>
