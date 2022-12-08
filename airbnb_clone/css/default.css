@@ -1,11 +1,19 @@
 body {
-    background-color: white;
+  background-color: white;
 }
 
 .mt-sm {
-    margin-top: 25px;
+  margin-top: 25px;
 }
 
 .mt-lg {
-    margin-top: 50px;
+  margin-top: 50px;
+}
+
+html {
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
 }
