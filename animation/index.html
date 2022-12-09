@@ -17,26 +17,5 @@
         </div>
 
         <div class="wiggle">안녕하세요</div>
-
-        <div>x : <span id="x"></span>, y : <span id="y"></span></div>
-
-        <div class="cursor"></div>
-        <script>
-            window.addEventListener("mousemove", mouseMove);
-            let x = document.querySelector("#x");
-            let y = document.querySelector("#y");
-
-            let cursor = document.querySelector(".cursor");
-
-            function mouseMove(event) {
-                x.textContent = event.clientX;
-                y.textContent = event.clientY;
-
-                console.log(cursor);
-
-                cursor.style.top = event.clientY + "px";
-                cursor.style.left = event.clientX + "px";
-            }
-        </script>
     </body>
 </html>
