@@ -43,3 +43,33 @@ body {
 .box:hover .box-overloay {
     top: 0px;
 }
+
+@keyframes wiggle {
+    0% {
+        transform: rotate(0deg);
+        color: white;
+    }
+    25% {
+        transform: rotate(10deg);
+        color: lightgray;
+    }
+    50% {
+        transform: rotate(0deg);
+        color: gray;
+    }
+    75% {
+        transform: rotate(-10deg);
+        color: lightgray;
+    }
+    100% {
+        transform: rotate(0deg);
+        color: white;
+    }
+}
+
+.wiggle {
+    margin-top: 20px;
+    display: inline-block;
+    font-size: 30px;
+    animation: wiggle 2.5s infinite;
+}
