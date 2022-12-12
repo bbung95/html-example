@@ -1,4 +1,4 @@
-.container{
+.container {
     width: 400px;
     height: 600px;
     border: 1px solid black;
@@ -6,7 +6,6 @@
     color: white;
     font-weight: bold;
 }
-
 
 /* inline Layout 
 
@@ -17,18 +16,18 @@
 - vertical-align: top 을 사용하여 해결가능
 */
 
-.top{
+.top {
     background-color: red;
     width: 400px;
     height: 200px;
     font-size: 16px;
 }
 
-p{
+p {
     margin: 0px;
 }
 
-.left{
+.left {
     background-color: blue;
     height: 200px;
     width: 200px;
@@ -37,7 +36,7 @@ p{
     vertical-align: top;
 }
 
-.right{
+.right {
     background-color: green;
     height: 200px;
     width: 200px;
@@ -45,7 +44,7 @@ p{
     font-size: 16px;
 }
 
-.bottom{
+.bottom {
     background-color: purple;
     width: 400px;
     height: 200px;
