@@ -52,6 +52,7 @@
             opacity: 0.7;
 
             &.is-active {
+                flex-grow: 1.2;
                 font-weight: bold;
                 opacity: 1;
 
