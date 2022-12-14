@@ -35,12 +35,17 @@
 
     .recent-menu-item {
         box-sizing: content-box;
-        padding-left: 16px;
+        position: relative;
+        padding-right: 16px;
         width: 80px;
         text-align: center;
         &.is-ordered {
-            padding-right: 16px;
+            padding-left: 16px;
             border-right: 1px solid $booking-color-bg102;
+
+            & + .recent-menu-item {
+                padding-left: 16px;
+            }
         }
     }
 
@@ -74,8 +79,8 @@
 
     .badge-cart {
         position: absolute;
-        bottom: 0;
-        right: 0;
+        top: 50px;
+        right: 16px;
         padding: 6px;
         display: flex;
         border: 1px solid $booking-color-border150;
@@ -91,7 +96,7 @@
     .menu-name {
         margin-top: 8px;
         font-weight: 600;
-        font-style: 14px;
+        font-size: 14px;
         @include ellipse;
     }
 
