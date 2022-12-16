@@ -23,6 +23,7 @@
             transform: rotate(90deg);
         }
 
+        &.disabled,
         &:disabled {
             color: $booking-color-border102;
         }
