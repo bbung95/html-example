@@ -1,23 +1,76 @@
 <!DOCTYPE html>
-<!-- 
-    브라우저가 읽어야 할 HTML이 HTML5라는걸 명시해준다 필수!
- -->
 <html lang="en">
-    <!--
-    HTML : HyperText Markup Language
-    사용지(유저), 브라우저(크롬, 웨일...) > 웹페이지
-    개발자 사용자에게 보여주고 싶은 컨텐츠를
-    브라우저가 읽을 수 있도록 만드러놓은 문서
--->
     <head>
-        <!--
-        BODY 태그를 읽기 이전에 알아야 할 정보
-        이 HTML파일의 기본적인 정보
-    --></head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            *,
+            *::after,
+            *::before {
+                box-sizing: border-box;
+                margin: 0;
+            }
+
+            body {
+                margin: 0 auto;
+            }
+
+            .content-list {
+                display: flex;
+            }
+
+            .content-item {
+                position: relative;
+                width: 300px;
+                height: 300px;
+                margin: 10px;
+            }
+
+            .content-item .item-img {
+                width: 100%;
+                height: 100%;
+                padding: 10px;
+            }
+
+            .content-item a[role="tab"] {
+                display: block;
+                text-decoration: none;
+                outline: none;
+            }
+
+            .content-item a[role="tab"]::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border: 1px solid black;
+            }
+
+            .content-item a[role="tab"]:hover::before,
+            .content-item a[role="tab"]:focus::before {
+                border-color: red;
+            }
+        </style>
+    </head>
     <body>
         <!--
-        사용자에게 보여주고 싶은 컨텐츠
-    -->
-        <h1>안녕하세요</h1>
+    사용자에게 보여주고 싶은 컨텐츠
+-->
+        <div class="content-list">
+            <div class="content-item">
+                <a href="/" role="tab">
+                    <img src="https://via.placeholder.com/280x280" class="item-img" />
+                </a>
+            </div>
+            <div class="content-item">
+                <a href="/" role="tab">
+                    <img src="https://via.placeholder.com/280x280" class="item-img" />
+                </a>
+            </div>
+        </div>
     </body>
 </html>
